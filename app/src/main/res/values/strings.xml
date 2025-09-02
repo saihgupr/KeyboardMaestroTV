@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Keyboard Maestro TV</string>
+    <string name="app_description">Control your Mac with Keyboard Maestro scripts</string>
+    
+    <!-- Main Screen -->
+    <string name="scripts_title">Keyboard Maestro Scripts</string>
+    <string name="no_scripts_found">No scripts found</string>
+    <string name="loading_scripts">Loading scripts...</string>
+    <string name="connection_error">Connection Error</string>
+    <string name="script_executed">Script executed successfully</string>
+    <string name="script_failed">Failed to execute script</string>
+    
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="mac_ip_address">Mac IP Address</string>
+    <string name="mac_port">Mac Port</string>
+    <string name="connection_timeout">Connection Timeout</string>
+    <string name="grid_columns">Grid Columns</string>
+    <string name="test_connection">Test Connection</string>
+    <string name="connection_successful">Connection successful</string>
+    <string name="connection_failed">Connection failed</string>
+    
+    <!-- Navigation -->
+    <string name="back">Back</string>
+    <string name="select">Select</string>
+    <string name="menu">Menu</string>
+    <string name="settings">Settings</string>
+    
+    <!-- Error Messages -->
+    <string name="error_network">Network error. Please check your connection.</string>
+    <string name="error_timeout">Connection timeout. Please try again.</string>
+    <string name="error_invalid_response">Invalid response from Mac.</string>
+    <string name="error_script_not_found">Script not found.</string>
+    
+    <!-- Default Values -->
+    <string name="default_mac_ip">192.168.1.30</string>
+    <string name="default_mac_port">4490</string>
+    <string name="default_timeout">5000</string>
+    <string name="default_grid_columns">3</string>
+</resources>
