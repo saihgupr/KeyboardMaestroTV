@@ -16,7 +16,7 @@
     <!-- Android TV Features -->
     <uses-feature
         android:name="android.software.leanback"
-        android:required="true" />
+        android:required="false" />
     <uses-feature
         android:name="android.hardware.touchscreen"
         android:required="false" />
@@ -51,9 +51,8 @@
     <!-- Screen support -->
     <supports-screens
         android:largeScreens="true"
-        android:normalScreens="false"
-        android:requiresSmallestWidthDp="500"
-        android:smallScreens="false"
+        android:normalScreens="true"
+        android:smallScreens="true"
         android:xlargeScreens="true" />
 
     <permission
@@ -72,26 +71,35 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         android:usesCleartextTraffic="true" >
 
         <!-- Main Activity for TV Launcher -->
         <activity
             android:name="com.pizzaman.keyboardmaestrotv.MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
             android:exported="true"
-            android:screenOrientation="landscape"
+            android:screenOrientation="sensor"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
             </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
         <!-- Settings Activity -->
         <activity
             android:name="com.pizzaman.keyboardmaestrotv.SettingsActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
             android:exported="false"
+            android:screenOrientation="sensor"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
 
         <provider
