@@ -39,7 +39,7 @@ For scripts to appear in the app, they must have the **"Public Web" trigger** en
 
 **Option 1: Download Pre-built APK (Recommended)**
 - Download the latest APK from [Releases](https://github.com/saihgupr/KeyboardMaestroTV/releases)
-- Install via ADB: `adb install KeyboardMaestroTV-v1.0.0.apk`
+- Install via ADB: `adb install KeyboardMaestroTV-v1.1.0.apk`
 
 **Option 2: Build from Source**
 ```bash
@@ -49,14 +49,28 @@ cd KeyboardMaestroTV
 adb install app/build/outputs/apk/debug/app-debug.apk
 ```
 
+### Installing Unsigned APKs
+
+Since this is a debug build, you'll need to enable installation of apps from unknown sources:
+
+**On Android TV:**
+1. Go to **Settings** → **Security & restrictions** → **Unknown sources**
+2. Enable **Install unknown apps** for your file manager or ADB
+3. Install the APK via ADB or sideload through your preferred method
+
+**On Mobile Devices:**
+1. Go to **Settings** → **Security** → **Install unknown apps** (or **Install apps from unknown sources**)
+2. Enable for your browser or file manager
+3. Download and install the APK directly
+
+**Note:** Debug APKs are unsigned, so Android requires explicit permission to install them for security reasons.
+
 ## Usage
 
 1. Launch the app on your Android TV
 2. Configure your Mac's IP address and port in Settings
 3. Test the connection
 4. Browse and execute scripts with your TV remote
-
-*Note: The app also works on mobile devices and tablets, but it's primarily designed for Android TV.*
 
 ## Configuration
 
