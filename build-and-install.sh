@@ -19,6 +19,7 @@ if [ $? -eq 0 ]; then
         adb install -r app/build/outputs/apk/debug/app-debug.apk
         
         if [ $? -eq 0 ]; then
+            adb shell am start -n com.pizzaman.keyboardmaestrotv/.MainActivity
             echo "✅ Installation successful!"
             echo "🎉 Keyboard Maestro TV is now installed on your Android TV!"
             echo ""

@@ -22,7 +22,7 @@ A beautiful Android TV app for controlling Keyboard Maestro scripts on your Mac 
 ### On your Mac:
 1. Install and run **Keyboard Maestro**
 2. Enable **Web Server** in Preferences → Web Server
-3. Note the port (default: 1234)
+3. Note the port (default: 4490)
 4. Allow remote access
 
 ### Script Configuration:
@@ -33,6 +33,12 @@ For scripts to appear in the app, they must have the **"Public Web" trigger** en
 4. Scripts without this trigger will not appear in the app
 
 ### On Android TV:
+
+**Option 1: Download Pre-built APK (Recommended)**
+- Download the latest APK from [Releases](https://github.com/saihgupr/KeyboardMaestroTV/releases)
+- Install via ADB: `adb install KeyboardMaestroTV-v1.0.0.apk`
+
+**Option 2: Build from Source**
 ```bash
 git clone https://github.com/saihgupr/KeyboardMaestroTV
 cd KeyboardMaestroTV
@@ -53,36 +59,6 @@ adb install app/build/outputs/apk/debug/app-debug.apk
 - **Port**: Keyboard Maestro web server port (default: 1234)
 - **Grid Columns**: Number of columns in script grid (2-6)
 - **Timeout**: Connection timeout in milliseconds
-
-## Project Structure
-
-```
-app/src/main/
-├── java/com/pizzaman/keyboardmaestrotv/
-│   ├── MainActivity.kt          # Main screen with script grid
-│   ├── SettingsActivity.kt      # Connection settings
-│   ├── models/                  # Data classes
-│   ├── network/                 # API service
-│   └── adapters/                # RecyclerView adapter
-├── res/
-│   ├── layout/                  # UI layouts
-│   ├── drawable/                # Graphics and backgrounds
-│   ├── values/                  # Strings, colors, themes
-│   └── mipmap-*/                # App icons
-└── AndroidManifest.xml
-```
-
-## Troubleshooting
-
-**Connection Issues:**
-- Verify Keyboard Maestro web server is enabled
-- Check network connectivity between devices
-- Ensure firewall allows the connection
-
-**Script Issues:**
-- Confirm scripts are enabled in Keyboard Maestro
-- Ensure scripts have the **"Public Web" trigger** enabled (see Script Configuration above)
-- Check Keyboard Maestro logs for errors
 
 ## License
 

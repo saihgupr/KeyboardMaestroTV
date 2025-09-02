@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- macOS-inspired color palette -->
-    <color name="macos_blue">#007AFF</color>
-    <color name="macos_blue_dark">#0056CC</color>
+    <!-- Grayscale color palette -->
+    <color name="macos_blue">#8E8E93</color>
+    <color name="macos_blue_dark">#636366</color>
     <color name="macos_gray">#8E8E93</color>
     <color name="macos_gray_dark">#636366</color>
     <color name="macos_light_gray">#F2F2F7</color>
@@ -11,10 +11,10 @@
     <color name="macos_tertiary_gray">#C7C7CC</color>
     <color name="macos_quaternary_gray">#D1D1D6</color>
     <color name="macos_separator">#3A3A3C</color>
-    <color name="macos_red">#FF3B30</color>
-    <color name="macos_green">#34C759</color>
-    <color name="macos_orange">#FF9500</color>
-    <color name="macos_yellow">#FFCC00</color>
+    <color name="macos_red">#8E8E93</color>
+    <color name="macos_green">#AEAEB2</color>
+    <color name="macos_orange">#C7C7CC</color>
+    <color name="macos_yellow">#D1D1D6</color>
     
     <!-- App specific colors -->
     <color name="primary_blue">@color/macos_blue</color>
@@ -24,9 +24,11 @@
     <color name="text_primary">@color/macos_dark_gray</color>
     <color name="text_secondary">@color/macos_gray</color>
     <color name="text_tertiary">@color/macos_secondary_gray</color>
-    <color name="card_background">#FFFFFF</color>
+    <color name="card_background">#F0F0F2</color>
     <color name="card_background_dark">#2C2C2E</color>
-    <color name="focus_color">@color/macos_blue</color>
+    <color name="card_background_light">#F8F8F8</color>
+    <color name="card_background_focused">#E5E5E7</color>
+    <color name="focus_color">@color/macos_gray</color>
     <color name="divider_color">@color/macos_quaternary_gray</color>
     
     <!-- Status colors -->

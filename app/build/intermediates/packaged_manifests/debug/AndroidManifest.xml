@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.chrislapointe.keyboardmaestrotv"
+    package="com.pizzaman.keyboardmaestrotv"
     android:versionCode="1"
     android:versionName="1.0.0" >
 
@@ -57,10 +57,10 @@
         android:xlargeScreens="true" />
 
     <permission
-        android:name="com.chrislapointe.keyboardmaestrotv.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:name="com.pizzaman.keyboardmaestrotv.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.chrislapointe.keyboardmaestrotv.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+    <uses-permission android:name="com.pizzaman.keyboardmaestrotv.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 
     <application
         android:allowBackup="true"
@@ -77,7 +77,7 @@
 
         <!-- Main Activity for TV Launcher -->
         <activity
-            android:name="com.chrislapointe.keyboardmaestrotv.MainActivity"
+            android:name="com.pizzaman.keyboardmaestrotv.MainActivity"
             android:exported="true"
             android:screenOrientation="landscape"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
@@ -90,13 +90,13 @@
 
         <!-- Settings Activity -->
         <activity
-            android:name="com.chrislapointe.keyboardmaestrotv.SettingsActivity"
+            android:name="com.pizzaman.keyboardmaestrotv.SettingsActivity"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"
-            android:authorities="com.chrislapointe.keyboardmaestrotv.androidx-startup"
+            android:authorities="com.pizzaman.keyboardmaestrotv.androidx-startup"
             android:exported="false" >
             <meta-data
                 android:name="androidx.emoji2.text.EmojiCompatInitializer"

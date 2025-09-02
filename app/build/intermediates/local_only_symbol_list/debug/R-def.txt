@@ -4,6 +4,8 @@ color background_dark
 color background_light
 color card_background
 color card_background_dark
+color card_background_focused
+color card_background_light
 color divider_color
 color error_color
 color focus_color
@@ -58,6 +60,8 @@ layout activity_settings
 layout item_script_card
 mipmap ic_banner
 mipmap ic_launcher
+mipmap ic_launcher_background
+mipmap ic_launcher_foreground
 string app_description
 string app_name
 string back

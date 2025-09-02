@@ -1,6 +1,6 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.chrislapointe.keyboardmaestrotv"
+3    package="com.pizzaman.keyboardmaestrotv"
 4    android:versionCode="1"
 5    android:versionName="1.0.0" >
 6
@@ -103,12 +103,12 @@
 58
 59    <permission
 59-->[androidx.core:core:1.12.0] /Users/chrislapointe/.gradle/caches/transforms-3/3db0ecba79cca560ca8a27d2b7d48122/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
-60        android:name="com.chrislapointe.keyboardmaestrotv.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+60        android:name="com.pizzaman.keyboardmaestrotv.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
 60-->[androidx.core:core:1.12.0] /Users/chrislapointe/.gradle/caches/transforms-3/3db0ecba79cca560ca8a27d2b7d48122/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
 61        android:protectionLevel="signature" />
 61-->[androidx.core:core:1.12.0] /Users/chrislapointe/.gradle/caches/transforms-3/3db0ecba79cca560ca8a27d2b7d48122/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
 62
-63    <uses-permission android:name="com.chrislapointe.keyboardmaestrotv.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+63    <uses-permission android:name="com.pizzaman.keyboardmaestrotv.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 63-->[androidx.core:core:1.12.0] /Users/chrislapointe/.gradle/caches/transforms-3/3db0ecba79cca560ca8a27d2b7d48122/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
 63-->[androidx.core:core:1.12.0] /Users/chrislapointe/.gradle/caches/transforms-3/3db0ecba79cca560ca8a27d2b7d48122/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
 64
@@ -138,7 +138,7 @@
 78        <!-- Main Activity for TV Launcher -->
 79        <activity
 79-->/Users/chrislapointe/Scripts/Gemini/KeyboardMaestroTV/app/src/main/AndroidManifest.xml:41:9-50:20
-80            android:name="com.chrislapointe.keyboardmaestrotv.MainActivity"
+80            android:name="com.pizzaman.keyboardmaestrotv.MainActivity"
 80-->/Users/chrislapointe/Scripts/Gemini/KeyboardMaestroTV/app/src/main/AndroidManifest.xml:42:13-41
 81            android:exported="true"
 81-->/Users/chrislapointe/Scripts/Gemini/KeyboardMaestroTV/app/src/main/AndroidManifest.xml:43:13-36
@@ -161,7 +161,7 @@
 91        <!-- Settings Activity -->
 92        <activity
 92-->/Users/chrislapointe/Scripts/Gemini/KeyboardMaestroTV/app/src/main/AndroidManifest.xml:53:9-56:72
-93            android:name="com.chrislapointe.keyboardmaestrotv.SettingsActivity"
+93            android:name="com.pizzaman.keyboardmaestrotv.SettingsActivity"
 93-->/Users/chrislapointe/Scripts/Gemini/KeyboardMaestroTV/app/src/main/AndroidManifest.xml:54:13-45
 94            android:exported="false"
 94-->/Users/chrislapointe/Scripts/Gemini/KeyboardMaestroTV/app/src/main/AndroidManifest.xml:55:13-37
@@ -172,7 +172,7 @@
 97-->[androidx.emoji2:emoji2:1.2.0] /Users/chrislapointe/.gradle/caches/transforms-3/ea693f33408dc65a5c871559cb8cdb52/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
 98            android:name="androidx.startup.InitializationProvider"
 98-->[androidx.emoji2:emoji2:1.2.0] /Users/chrislapointe/.gradle/caches/transforms-3/ea693f33408dc65a5c871559cb8cdb52/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
-99            android:authorities="com.chrislapointe.keyboardmaestrotv.androidx-startup"
+99            android:authorities="com.pizzaman.keyboardmaestrotv.androidx-startup"
 99-->[androidx.emoji2:emoji2:1.2.0] /Users/chrislapointe/.gradle/caches/transforms-3/ea693f33408dc65a5c871559cb8cdb52/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
 100            android:exported="false" >
 100-->[androidx.emoji2:emoji2:1.2.0] /Users/chrislapointe/.gradle/caches/transforms-3/ea693f33408dc65a5c871559cb8cdb52/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37

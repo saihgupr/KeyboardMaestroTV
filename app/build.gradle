@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.chrislapointe.keyboardmaestrotv'
+    namespace 'com.pizzaman.keyboardmaestrotv'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.chrislapointe.keyboardmaestrotv"
+        applicationId "com.pizzaman.keyboardmaestrotv"
         minSdk 24
         targetSdk 34
         versionCode 1

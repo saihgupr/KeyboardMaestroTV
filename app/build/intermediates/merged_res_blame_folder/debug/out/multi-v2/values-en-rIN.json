@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.chrislapointe.keyboardmaestrotv.app-mergeDebugResources-52:/values-en-rIN/values-en-rIN.xml",
+            "outputFile": "com.pizzaman.keyboardmaestrotv.app-mergeDebugResources-52:/values-en-rIN/values-en-rIN.xml",
             "map": [
                 {
                     "source": "/Users/chrislapointe/.gradle/caches/transforms-3/a81249a9ffd8c81f94677ee914fb434a/transformed/preference-1.2.1/res/values-en-rIN/values-en-rIN.xml",

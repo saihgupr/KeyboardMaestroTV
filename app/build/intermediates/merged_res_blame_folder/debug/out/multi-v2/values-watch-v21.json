@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.chrislapointe.keyboardmaestrotv.app-mergeDebugResources-52:/values-watch-v21/values-watch-v21.xml",
+            "outputFile": "com.pizzaman.keyboardmaestrotv.app-mergeDebugResources-52:/values-watch-v21/values-watch-v21.xml",
             "map": [
                 {
                     "source": "/Users/chrislapointe/.gradle/caches/transforms-3/00ddeb48e071fa6a9572378f659dae82/transformed/appcompat-1.6.1/res/values-watch-v21/values-watch-v21.xml",

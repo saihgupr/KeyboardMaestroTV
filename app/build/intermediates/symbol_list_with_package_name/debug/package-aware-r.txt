@@ -1,4 +1,4 @@
-com.chrislapointe.keyboardmaestrotv
+com.pizzaman.keyboardmaestrotv
 anim abc_fade_in
 anim abc_fade_out
 anim abc_grow_fade_in_from_bottom
@@ -1677,6 +1677,8 @@ color call_notification_answer_color
 color call_notification_decline_color
 color card_background
 color card_background_dark
+color card_background_focused
+color card_background_light
 color cardview_dark_background
 color cardview_light_background
 color cardview_shadow_end_color
@@ -4819,6 +4821,8 @@ layout support_simple_spinner_dropdown_item
 layout video_surface_fragment
 mipmap ic_banner
 mipmap ic_launcher
+mipmap ic_launcher_background
+mipmap ic_launcher_foreground
 plurals mtrl_badge_content_description
 raw lb_voice_failure
 raw lb_voice_no_input
