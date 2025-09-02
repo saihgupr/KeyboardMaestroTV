@@ -4,30 +4,21 @@ A beautiful Android TV app for controlling Keyboard Maestro scripts on your Mac 
 
 ## Screenshots
 
-### Android TV
 <div align="center">
   <img src="https://i.imgur.com/vsbRlBJ.png" width="45%" alt="Main Screen" />
   <img src="https://i.imgur.com/Fw6OocR.png" width="45%" alt="Settings Screen" />
 </div>
-*Main screen showing the script grid with shortcut buttons | Settings screen for configuring Mac connection*
 
-### Mobile (Portrait Mode)
-<div align="center">
-  <img src="https://i.imgur.com/jiYBInQ.png" width="45%" alt="Mobile Main Screen" />
-  <img src="https://i.imgur.com/nv9dsr8.png" width="45%" alt="Mobile Settings Screen" />
-</div>
-*Mobile main screen in portrait mode | Mobile settings screen with touch-friendly interface*
+*Main screen showing the script grid with shortcut buttons | Settings screen for configuring Mac connection*
 
 ## Features
 
 - **macOS Design**: Clean interface with macOS colors and typography
 - **TV-First Design**: Optimized for Android TV with D-pad navigation
-- **Mobile Compatible**: Also works on phones and tablets (secondary support)
-- **Auto Orientation**: Automatically adapts to portrait and landscape modes
 - **TV Navigation**: Full D-pad support with focus animations
-- **Touch Support**: Works with touch screens on mobile devices
-- **Remote Control**: Execute Keyboard Maestro scripts from your TV or mobile device
+- **Remote Control**: Execute Keyboard Maestro scripts from your TV
 - **Grid Layout**: Configurable columns for script organization
+- **Mobile Compatible**: Also works on phones and tablets (not the primary use case)
 
 ## Setup
 
@@ -44,7 +35,7 @@ For scripts to appear in the app, they must have the **"Public Web" trigger** en
 3. The script will now be accessible via the web interface
 4. Scripts without this trigger will not appear in the app
 
-### On Android TV (Primary) or Mobile (Secondary):
+### On Android TV:
 
 **Option 1: Download Pre-built APK (Recommended)**
 - Download the latest APK from [Releases](https://github.com/saihgupr/KeyboardMaestroTV/releases)
@@ -60,11 +51,12 @@ adb install app/build/outputs/apk/debug/app-debug.apk
 
 ## Usage
 
-1. Launch the app on your Android TV (recommended) or mobile device
+1. Launch the app on your Android TV
 2. Configure your Mac's IP address and port in Settings
-3. The app automatically adapts to your device's orientation
-4. Test the connection
-5. Browse and execute scripts with your TV remote (primary) or touch screen (mobile)
+3. Test the connection
+4. Browse and execute scripts with your TV remote
+
+*Note: The app also works on mobile devices and tablets, but it's primarily designed for Android TV.*
 
 ## Configuration
 
