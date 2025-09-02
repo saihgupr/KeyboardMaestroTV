@@ -49,21 +49,7 @@ cd KeyboardMaestroTV
 adb install app/build/outputs/apk/debug/app-debug.apk
 ```
 
-### Installing Unsigned APKs
-
-Since this is a debug build, you'll need to enable installation of apps from unknown sources:
-
-**On Android TV:**
-1. Go to **Settings** → **Security & restrictions** → **Unknown sources**
-2. Enable **Install unknown apps** for your file manager or ADB
-3. Install the APK via ADB or sideload through your preferred method
-
-**On Mobile Devices:**
-1. Go to **Settings** → **Security** → **Install unknown apps** (or **Install apps from unknown sources**)
-2. Enable for your browser or file manager
-3. Download and install the APK directly
-
-**Note:** Debug APKs are unsigned, so Android requires explicit permission to install them for security reasons.
+**Note:** You'll need to enable "Install unknown apps" in your device's security settings before installing.
 
 ## Usage
 
