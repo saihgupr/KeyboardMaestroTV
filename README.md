@@ -77,6 +77,12 @@ While primarily designed for Android TV, the app also works on mobile devices an
 - **Responsive Layout**: Adapts grid columns based on screen size
 - **Same Functionality**: All TV features work on mobile devices
 
+
+
+
+
+
+
 ## License
 
 MIT License
