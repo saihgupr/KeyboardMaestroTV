@@ -15,7 +15,8 @@ import com.pizzaman.keyboardmaestrotv.models.KeyboardMaestroScript
  */
 class ScriptsAdapter(
     private var scripts: List<KeyboardMaestroScript> = emptyList(),
-    private val onScriptExecute: (KeyboardMaestroScript) -> Unit
+    private val onScriptExecute: (KeyboardMaestroScript) -> Unit,
+    private val onItemFocused: ((Int) -> Unit)? = null
 ) : RecyclerView.Adapter<ScriptsAdapter.ScriptViewHolder>() {
     
     class ScriptViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -41,6 +42,9 @@ class ScriptsAdapter(
         // Set focus handling for TV navigation - scale animation and color change
         holder.itemView.setOnFocusChangeListener { _, hasFocus ->
             if (hasFocus) {
+                // Notify MainActivity that this shortcut is focused
+                onItemFocused?.invoke(position)
+                
                 holder.itemView.animate()
                     .scaleX(1.05f)
                     .scaleY(1.05f)

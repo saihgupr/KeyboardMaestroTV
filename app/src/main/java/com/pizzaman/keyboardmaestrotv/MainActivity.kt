@@ -34,6 +34,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var apiService: KeyboardMaestroApiService
     private var connectionSettings: ConnectionSettings = ConnectionSettings()
     private lateinit var sharedPreferences: SharedPreferences
+    private var currentShortcut: Int = 0 // Track which shortcut is currently highlighted
     
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -51,6 +52,9 @@ class MainActivity : AppCompatActivity() {
         // Load connection settings
         loadConnectionSettings()
         
+        // Load current shortcut position
+        loadCurrentShortcut()
+        
         // Load scripts on startup
         loadScripts()
     }
@@ -66,9 +70,14 @@ class MainActivity : AppCompatActivity() {
     }
     
     private fun setupRecyclerView() {
-        scriptsAdapter = ScriptsAdapter { script ->
-            executeScript(script)
-        }
+        scriptsAdapter = ScriptsAdapter(
+            onScriptExecute = { script ->
+                executeScript(script)
+            },
+            onItemFocused = { position ->
+                currentShortcut = position
+            }
+        )
         
         // Get grid columns from settings
         val gridColumns = sharedPreferences.getInt("grid_columns", 3)
@@ -98,6 +107,8 @@ class MainActivity : AppCompatActivity() {
         // Make settings button behave like script cards
         settingsButton.setOnFocusChangeListener { _, hasFocus ->
             if (hasFocus) {
+                // Don't change currentShortcut when settings button is focused
+                // Keep the last shortcut position
                 settingsButton.animate()
                     .scaleX(1.05f)
                     .scaleY(1.05f)
@@ -242,5 +253,41 @@ class MainActivity : AppCompatActivity() {
         }
         
         loadScripts()
+        
+        // Restore focus after a short delay to ensure the RecyclerView is ready
+        scriptsRecyclerView.postDelayed({
+            restoreFocus()
+        }, 200)
+    }
+    
+    override fun onPause() {
+        super.onPause()
+        saveCurrentShortcut()
+    }
+    
+    private fun loadCurrentShortcut() {
+        currentShortcut = sharedPreferences.getInt("current_shortcut", 0)
+    }
+    
+    private fun saveCurrentShortcut() {
+        sharedPreferences.edit()
+            .putInt("current_shortcut", currentShortcut)
+            .apply()
+    }
+    
+    private fun restoreFocus() {
+        // Focus the current shortcut position
+        if (scriptsAdapter.itemCount > 0 && currentShortcut < scriptsAdapter.itemCount) {
+            scriptsRecyclerView.post {
+                val layoutManager = scriptsRecyclerView.layoutManager
+                layoutManager?.scrollToPosition(currentShortcut)
+                
+                // Request focus on the current shortcut after a short delay to ensure layout is complete
+                scriptsRecyclerView.postDelayed({
+                    val viewHolder = scriptsRecyclerView.findViewHolderForAdapterPosition(currentShortcut)
+                    viewHolder?.itemView?.requestFocus()
+                }, 100)
+            }
+        }
     }
 }
