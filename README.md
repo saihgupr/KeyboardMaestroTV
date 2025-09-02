@@ -65,6 +65,18 @@ adb install app/build/outputs/apk/debug/app-debug.apk
 - **Grid Columns**: Number of columns in script grid (2-6)
 - **Timeout**: Connection timeout in milliseconds
 
+## Mobile Support
+
+While primarily designed for Android TV, the app also works on mobile devices and tablets. The interface automatically adapts to portrait and landscape orientations, and you can use touch controls instead of a TV remote. The app maintains the same macOS-inspired design and functionality across all devices.
+
+<img src="https://i.imgur.com/jiYBInQ.png" width="15%" align="right" alt="Mobile Portrait View" />
+
+**Mobile Features:**
+- **Touch Navigation**: Tap to select and execute scripts
+- **Auto Orientation**: Seamlessly switches between portrait and landscape
+- **Responsive Layout**: Adapts grid columns based on screen size
+- **Same Functionality**: All TV features work on mobile devices
+
 ## License
 
 MIT License
