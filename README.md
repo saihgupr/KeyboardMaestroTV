@@ -5,8 +5,8 @@ A beautiful Android TV app for controlling Keyboard Maestro scripts on your Mac 
 ## Screenshots
 
 <div align="center">
-  <img src="https://i.imgur.com/vsbRlBJ.png" width="50%" alt="Main Screen" />
-  <img src="https://i.imgur.com/Fw6OocR.png" width="50%" alt="Settings Screen" />
+  <img src="https://i.imgur.com/vsbRlBJ.png" width="47%" alt="Main Screen" />
+  <img src="https://i.imgur.com/Fw6OocR.png" width="47%" alt="Settings Screen" />
 </div>
 
 *Main screen showing the script grid with shortcut buttons | Settings screen for configuring Mac connection*
